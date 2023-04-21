@@ -18,13 +18,24 @@ $nbr_installed = 0
 $nbr_updated = 0
 foreach ($app in $apps) {
   $app = $app.Trim()
+  
+  # skip blank new lines
+  if ([string]::IsNullOrEmpty($app)) {
+    continue
+  }
+  
+  # skip comments
+  if ($app.Substring(0, 1) -eq "#") {
+    continue
+  }
+  
   Write-Output ""
   Write-Output "installing $app"
   try {
     $search = choco search $searchTerm --local-only
     if ($search -like "*already installed*") { 
       choco upgrade $app -y | Write-Output
-      Write-Output "updated $app"
+      Write-Output "app already installed, updated $app"
       $nbr_updated++
     } else {
       choco install $app -y | Write-Output
