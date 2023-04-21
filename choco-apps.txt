@@ -1,0 +1,25 @@
+### browsers
+firefox
+# googlechrome
+vivaldi
+
+### communication
+protonvpn
+discord
+
+### dev
+jetbrainstoolbox
+microsoft-openjdk
+
+### office
+libreoffice
+pdfxchangeeditor
+
+### files
+7zip
+
+### media
+vlc
+
+### utilities
+powertoys
