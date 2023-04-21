@@ -1,5 +1,5 @@
 # win11-nifty
-Nifty way to install Win11 using [chocolatey](https://community.chocolatey.org/)
+Nifty way to install apps in Win11 using [chocolatey](https://community.chocolatey.org/)
 
 [chocolatey]([https://scoop-docs.now.sh/](https://docs.chocolatey.org/en-us/choco/setup)) is a command-line installer for Windows, which allows you to script an install, update, modification, etc of your Windows 11.
 There is also a GUI avaialbe, [Chocolatey GUI](https://docs.chocolatey.org/en-us/chocolatey-gui/)
