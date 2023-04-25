@@ -6,6 +6,11 @@ Write-Output ""
 if (!(Get-Command choco -ErrorAction SilentlyContinue)) {
   Write-Output "chocolatey not installed .. installing..."
   Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+  
+  # chocolatey installs to C:\ProgramData\chocolatey
+  # set install path for chocolatey tools; default C:/tools/
+  [System.Environment]::SetEnvironmentVariable('ChocolateyToolsLocation','C:\ProgramData\ChocolateyTools', 'User')
+  
   Write-Output "chocolatey installed"
   Write-Output ""
 }
