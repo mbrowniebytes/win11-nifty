@@ -16,7 +16,7 @@ if (!(Get-Command choco -ErrorAction SilentlyContinue)) {
 }
 
 # get apps to install in simple new line delimited text file
-$apps = Get-Content -Path "choco-apps.txt"
+$apps = Get-Content -Path "win11-apps-choco.txt"
    
 # install apps
 $nbr_installed = 0
