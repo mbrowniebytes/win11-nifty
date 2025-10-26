@@ -1,0 +1,84 @@
+{
+    "sources": [
+        {
+            "name": "winget",
+            "_lookup": "winget ids of apps: https://winstall.app/apps",
+            "_arguments": "--silent, --quiet, --system-level, --system-setup --accept-source-agreements --accept-package-agreements"
+        }
+    ],
+    "installers": [
+        {
+            "_category": "browser",
+            "packageIdentifier": "Mozilla.Firefox"
+        },
+        {
+            "_category": "browser",
+            "packageIdentifier": "Google.Chrome"
+        },
+        {
+            "_category": "browser",
+            "packageIdentifier": "Vivaldi.Vivaldi"
+        },
+        {
+            "_category": "communication",
+            "packageIdentifier": "Proton.ProtonVPN"
+        },
+        {
+            "_category": "communication",
+            "packageIdentifier": "Discord.Discord"
+        },
+        {
+            "_category": "dev",
+            "packageIdentifier": "JetBrains.Toolbox"
+        },
+        {
+            "_category": "dev",
+            "packageIdentifier": "Microsoft.OpenJDK.21"
+        },
+        {
+            "_category": "dev",
+            "packageIdentifier": "Git.Git"
+        },
+        {
+            "_category": "dev",
+            "packageIdentifier": "Microsoft.DotNet.Runtime.8"
+        },
+        {
+            "_category": "dev",
+            "packageIdentifier": "Microsoft.DotNet.SDK.8"
+        },        
+        {
+            "_category": "dev",
+            "_description":"Manage SSH certificates",
+            "packageIdentifier": "clifton.clifton"            
+        },   
+        {
+            "_category": "office",
+            "packageIdentifier": "TheDocumentFoundation.LibreOffice"
+        },
+        {
+            "_category": "office",
+            "packageIdentifier": "TrackerSoftware.PDF-XChangeEditor"
+        },
+        {
+            "_category": "office",
+            "packageIdentifier": "#Microsoft.Teams"
+        },
+        {
+            "_category": "file",
+            "packageIdentifier": "7zip.7zip"
+        },
+        {
+            "_category": "media",
+            "packageIdentifier": "VideoLAN.VLC"
+        },
+        {
+            "_category": "utilities",
+            "packageIdentifier": "Microsoft.Powertoys"
+        },
+        {
+            "_category": "utilities",
+            "packageIdentifier": "Microsoft.WindowsTerminal"
+        }
+    ]
+}
